@@ -13,6 +13,7 @@ pipeline {
         
         stage("Clone") {
             steps{
+                echo "We are heere"
                 script{
                     clone("https://github.com/DeepanshuMishraa/radius","main")
                 }
